@@ -157,17 +157,7 @@ export default function Pendonor({ navigation, route }) {
                     { label: 'AB +', value: 'AB +' },
                 ]} />
                 <MyGap jarak={5} />
-                <MyPicker iconname="fitness-outline" label="Siap Melakukan Donor Darah ?" value={kirim.siap} onValueChange={x => {
-                    setKirim({
-                        ...kirim,
-                        siap: x
-                    })
-                }} data={[
-                    { label: '', value: '' },
-                    { label: 'Siap', value: 'Siap' },
-                    { label: 'Tidak', value: 'Tidak' },
-                ]} />
-                <MyGap jarak={5} />
+
 
                 <MyInput label="Password" iconname="lock-closed-outline" secureTextEntry={true} onChangeText={x => setKirim({ ...kirim, newpassword: x })} placeholder="Kosongkan jika tidak diubah" />
                 <MyGap jarak={20} />

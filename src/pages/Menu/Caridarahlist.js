@@ -155,7 +155,7 @@ export default function Caridarahlist({ navigation, route }) {
                             <MyList label="Nama Lengkap" value={item.nama_lengkap} />
                             <MyList label="Golongan Darah" value={item.golongan_darah} />
                             <MyList label="Kecamatan" value={item.kecamatan} />
-                            <MyList label="Nama Lengkap" value={item.telepon} />
+                            <MyList label="Telepon" value={item.telepon} />
                             <MyButton onPress={() => {
                                 if (item.siap !== 'Tidak') {
                                     Linking.openURL('https://wa.me/' + item.telepon)
